@@ -45,7 +45,7 @@
     <div class="container">
 
       <h1>
-        <a href="#" class="logo">Foodie<span class="span">.</span></a>
+        <a href="#" class="logo">Burgizza<span class="span">.</span></a>
       </h1>
 
       <nav class="navbar" data-navbar>
@@ -68,7 +68,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+            <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
           </li>
 
         </ul>
@@ -136,7 +136,7 @@
 
             <p class="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p>
 
-            <button class="btn">Book A Table</button>
+            <button class="btn"><a href="#footer" class="navbar-link" data-nav-link>Book A Table</a></button>
 
           </div>
 
@@ -465,9 +465,9 @@
 
                   <p class="price-text">Price:</p>
 
-                  <data class="price">$49.00</data>
+                  <data class="price">800</data>
 
-                  <del class="del" value="69.00">$69.00</del>
+                  <del class="del" value="69.00">1200RS </del>
 
                 </div>
 
@@ -504,9 +504,9 @@
 
                   <p class="price-text">Price:</p>
 
-                  <data class="price" value="29.00">$29.00</data>
+                  <data class="price" value="29.00">1300</data>
 
-                  <del class="del">$39.00</del>
+                  <del class="del">1500RS </del>
 
                 </div>
 
@@ -543,9 +543,9 @@
 
                   <p class="price-text">Price:</p>
 
-                  <data class="price" value="49.00">$49.00</data>
+                  <data class="price" value="49.00">1500</data>
 
-                  <del class="del">$69.00</del>
+                  <del class="del">1800RS </del>
 
                 </div>
 
@@ -582,9 +582,9 @@
 
                   <p class="price-text">Price:</p>
 
-                  <data class="price" value="59.00 ">$59.00</data>
+                  <data class="price" value="59.00 ">700</data>
 
-                  <del class="del">$69.00</del>
+                  <del class="del">900RS </del>
 
                 </div>
 
@@ -621,9 +621,9 @@
 
                   <p class="price-text">Price:</p>
 
-                  <data class="price" value="49.00">$49.00</data>
+                  <data class="price" value="49.00">1700</data>
 
-                  <del class="del">$69.00</del>
+                  <del class="del">1900RS </del>
 
                 </div>
 
@@ -660,9 +660,9 @@
 
                   <p class="price-text">Price:</p>
 
-                  <data class="price" value="49.00">$49.00</data>
+                  <data class="price" value="49.00">1900</data>
 
-                  <del class="del">$69.00</del>
+                  <del class="del">2100RS </del>
 
                 </div>
 
@@ -1274,7 +1274,7 @@
     <div class="footer-bottom">
       <div class="container">
         <p class="copyright-text">
-          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a> All Rights Reserved.
+          &copy; 2025 <a href="#" class="copyright-link">Burgizza</a> All Rights Reserved.
         </p>
       </div>
     </div>
@@ -1282,7 +1282,7 @@
   </footer>
 
 
-
+<footer class="footer" id="footer"></footer>
 
 
   <!-- 
@@ -1295,12 +1295,54 @@
 
 
 
+<!-- FLOATING CART BUTTON -->
+<div class="floating-cart" id="cartBtn">
+  <ion-icon name="cart-outline"></ion-icon>
+  <span class="cart-count" id="cartCount">0</span>
+</div>
 
+<!-- MINI CART PANEL -->
+<div class="mini-cart" id="miniCart">
+  <div class="mini-cart-header">
+    <h3>Your Order</h3>
+    <button id="closeCart">&times;</button>
+  </div>
+  <div class="mini-cart-items" id="cartItems">
+    <!-- Items appear here -->
+  </div>
+  <div class="mini-cart-footer">
+    <p>Total: <strong id="cartTotal">$0.00</strong></p>
+    <button class="btn" id="checkoutBtn">Checkout</button>
+  </div>
+</div>
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- FLOATING CHATBOT BUTTON -->
+<div class="chatbot-toggle" id="chatbotBtn">
+  <ion-icon name="chatbubble-outline"></ion-icon>
+</div>
+
+<!-- CHATBOT WINDOW -->
+<div class="chatbot" id="chatbot">
+  <div class="chatbot-header">
+    <h3>Burgizza AI Assistant</h3>
+    <button id="closeChat">&times;</button>
+  </div>
+  <div class="chatbot-messages" id="chatMessages">
+    <div class="bot-message">Hi! I'm Burgizza Bot. 😊 Ask me about menu, delivery, or prices!</div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button id="sendBtn">Send</button>
+  </div>
+</div>
+<div class="chat-overlay" id="chatOverlay"></div>
 
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+  <script src="assets/js/main.js"></script>
+  
 
   <!-- 
     - ionicon link
@@ -1308,6 +1350,8 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+
+  
 </body>
 
 </html>
