@@ -66,7 +66,7 @@ The form is front-end only (HTML/JS) and requires a service to collect data.
 3.  In `index.html`, find the `<form>` tag and paste the URL into the `action` attribute:
 
 ```html
-<form action="[PASTE YOUR FORMSPREE ENDPOINT URL HERE]" method="POST">
+<form action="[https://formspree.io/f/mvgeywkl]" method="POST">
     </form>
 
 🤝 Support and Contact
