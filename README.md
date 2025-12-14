@@ -1,4 +1,4 @@
-# Restaurant2
+# Foodie
 # 🍲 Foodie - Modern Responsive Restaurant Template
 
 This is a vibrant and fully responsive HTML5 template, ideal for any modern restaurant, café, food blog, or eatery. The design is clean, high-end, and visually appealing.
@@ -66,7 +66,7 @@ The form is front-end only (HTML/JS) and requires a service to collect data.
 3.  In `index.html`, find the `<form>` tag and paste the URL into the `action` attribute:
 
 ```html
-<form action="[https://formspree.io/f/mvgeywkl]" method="POST">
+<form action="https://formspree.io/f/mvgeywkl" method="POST">
     </form>
 
 🤝 Support and Contact
